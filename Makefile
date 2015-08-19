@@ -1,13 +1,13 @@
 all: clean build
 
-build: netty.c
-	gcc -o netty netty.c
+build: ip_formatter.c
+	gcc -o ip_formatter ip_formatter.c
 
-debug: clean netty.c
-	gcc -g -o netty netty.c
+debug: clean ip_formatter.c
+	gcc -g -o ip_formatter ip_formatter.c
 
 .PHONY: clean
 clean:
-	if [ -f netty ]; then rm netty; fi
-	if [ -d netty.dSYM ]; then rm -rf *.dSYM; fi
+	if [ -f ip_formatter ]; then rm ip_formatter; fi
+	if [ -d ip_formatter.dSYM ]; then rm -rf *.dSYM; fi
 
