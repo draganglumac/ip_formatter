@@ -4,5 +4,5 @@ Tiny C program that prints IP addresses and host and subnet parts of all the loc
 
 To build and run it, run the following commands in your BASH shell:
 
-    <make>  
-    <./ip_formatter>  
+    make
+    ./ip_formatter  
